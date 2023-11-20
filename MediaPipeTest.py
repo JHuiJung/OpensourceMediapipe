@@ -18,10 +18,10 @@ with mp_hands.Hands(max_num_hands = 1, min_detection_confidence =0.5,
     # 캠이 켜져있을때
     while cap.isOpened():
 
-        # 캠 키기 성공여부 success와 읽은 이미지를 image에 저장
+        # 캠 읽기 성공여부 success와 읽은 이미지를 image에 저장
         success, image = cap.read()
 
-        # 캠 키기 실패시 continue
+        # 캠 읽기 실패시 continue
         if not success:
             continue
 
